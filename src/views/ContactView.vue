@@ -1,13 +1,9 @@
 <script>
 export default {
-  name: "ContactView"
+  name: "ContactView",
 };
 </script>
 
-<template>
-  Contact Me
-</template>
+<template>Contact Me</template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

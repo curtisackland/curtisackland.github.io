@@ -1,13 +1,9 @@
 <script>
 export default {
-  name: "ResumeView"
+  name: "ResumeView",
 };
 </script>
 
-<template>
+<template>Resume</template>
 
-</template>
-
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>
