@@ -1,15 +1,17 @@
+@import "variables";
+
 #app {
   font-family: "Segoe UI", "Times New Roman", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #8195bb;
+  color: $baseFontColor;
 }
 
 body {
-  background-color: #0f172a;
+  background-color: $backgroundColor;
 }
 
 h1 {
-  color: #ffffff;
+  color: $h1Color;
   margin: 0;
 }
