@@ -53,4 +53,3 @@ h2 {
   aspect-ratio: 1 / 1;
 }
 </style>
-<script setup></script>
