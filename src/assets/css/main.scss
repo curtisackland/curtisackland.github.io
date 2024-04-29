@@ -7,6 +7,10 @@
   color: $baseFontColor;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $backgroundColor;
 }
