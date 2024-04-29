@@ -102,5 +102,8 @@ export default {
       sections: ["Home", "Resume", "Experience", "Projects", "Contact Me"],
     };
   },
+  mounted() {
+    document.title = "Curtis Ackland";
+  },
 };
 </script>
