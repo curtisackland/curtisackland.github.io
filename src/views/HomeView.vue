@@ -12,7 +12,7 @@
     <div class="icons-space">
       <button class="contact-me-button link-icons">
         <a class="mail-to-link" href="mailto: curtisackland@rogers.com">
-          Contact Me
+          Email Me
         </a>
       </button>
       <div>

@@ -20,6 +20,6 @@ export default {
   padding: 6px 10px 6px 10px;
   background-color: rgba(255, 165, 0, 0.1);
   color: $accentColor;
-  margin: 0 4px 8px 4px;
+  margin: 0 8px 8px 0;
 }
 </style>

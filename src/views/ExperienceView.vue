@@ -40,7 +40,7 @@ export default {
       company="Western University"
       date="June 2021 - April 2022; September 2023 - April 2024"
       description="Executed, monitored, and troubleshooted daily batch requirements. Communicated with team to resolve issues and to minimize downtime."
-      :skills="[]"
+      :skills="['Jenkins', 'Jira', 'PeopleSoft']"
       link="https://wts.uwo.ca/"
       class="card"
     ></ExperienceCard>
@@ -69,7 +69,7 @@ export default {
 .cards-container {
   white-space: normal;
   justify-content: center;
-  padding: 2% 25% 0 25%;
+  padding: 5% 25% 0 25%;
 }
 
 .experience-header {

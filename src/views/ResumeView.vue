@@ -78,7 +78,7 @@ export default {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          class="open-in-new shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+          class="arrows"
           aria-hidden="true"
         >
           <path
@@ -191,12 +191,30 @@ export default {
         </div>
         <div class="education-date">January 2024 - April 2024</div>
       </div>
+      <a href="#Projects">
+        <h2 class="see-all-projects">
+          See all projects &nbsp;
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="arrows"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </h2>
+      </a>
     </div>
     <div v-else-if="page === 'Hobbies'" class="slide-in">
       <div
         v-for="(item, index) in hobbies"
         :key="index"
-        style="display: flex; align-content: center; margin: 0 20px 0 16px"
+        style="display: flex; align-content: center; margin: 0 40px 16px 40px"
       >
         <div>
           <div class="bullet-point"></div>
@@ -221,7 +239,7 @@ export default {
 .resume-container {
   white-space: normal;
   justify-content: center;
-  padding: 2% 25% 0 25%;
+  padding: 5% 25% 0 25%;
 }
 
 @media (max-width: 1250px) {
@@ -235,6 +253,31 @@ export default {
   justify-content: center;
   text-align: center;
   margin-bottom: 12px;
+
+  &:hover {
+    color: $accentColor;
+    svg {
+      animation: slideTopRight 0.3s forwards;
+    }
+  }
+}
+
+@keyframes slideTopRight {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(10px) translateY(-10px);
+  }
+}
+
+@keyframes slideBottomLeft {
+  0% {
+    transform: translateX(10px) translateY(-10px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
 }
 
 .resume-buttons {
@@ -251,7 +294,7 @@ export default {
     border: 0;
     border-radius: 10px;
     cursor: pointer;
-    min-width: 120px;
+    min-width: 130px;
 
     &.highlighted {
       background-color: rgba(255, 165, 0, 0.1);
@@ -290,7 +333,7 @@ h2 {
   margin: 0;
 }
 
-.open-in-new {
+.arrows {
   height: 30px;
   width: auto;
 }
@@ -313,6 +356,46 @@ h2 {
 .project-titles {
   font-weight: bold;
   margin-left: 16px;
+}
+
+.see-all-projects {
+  display: flex;
+  flex-wrap: wrap;
+  white-space: normal;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &:hover {
+    color: $accentColor;
+    svg {
+      animation: slideRight 0.3s forwards;
+    }
+  }
+
+  &:not(:hover) {
+    svg {
+      animation: slideLeft 0.3s forwards;
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(25px);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 li::marker {

@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <a class="active" href="#home"><h2>C</h2></a>
+    <a class="active" href="#Home"><h2>C</h2></a>
     <div class="links">
       <a
         v-for="(item, index) in sections"
@@ -51,7 +51,7 @@ nav {
 
 h2 {
   color: $accentColor;
-  margin: 0;
+  margin: 0 0 16px;
   font-size: 2em;
   display: flex;
   align-items: center;
@@ -65,7 +65,7 @@ h2 {
 
 .home {
   align-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .section {

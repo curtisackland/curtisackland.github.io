@@ -12,7 +12,7 @@ export default {
       <a href="https://sass-lang.com/documentation/syntax/" target="_blank"
         >SCSS</a
       >
-      deployed to
+      and deployed to
       <a href="https://pages.github.com/" target="_blank">Github Pages</a> using
       <a href="https://github.com/features/actions" target="_blank"
         >Github Actions</a
@@ -25,7 +25,7 @@ export default {
 .info-container {
   white-space: normal;
   justify-content: center;
-  padding: 2% 25% 0 25%;
+  padding: 5% 25% 0 25%;
 }
 
 @media (max-width: 1250px) {

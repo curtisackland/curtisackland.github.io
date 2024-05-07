@@ -44,7 +44,7 @@ export default {
 .contact-me-container {
   white-space: normal;
   justify-content: center;
-  padding: 2% 25% 0 25%;
+  padding: 5% 25% 0 25%;
 }
 
 @media (max-width: 1250px) {
