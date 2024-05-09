@@ -1,4 +1,5 @@
 @import "variables";
+@import "effects";
 
 #app {
   font-family: "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
@@ -18,4 +19,9 @@ body {
 h1 {
   color: $h1Color;
   margin: 0;
+}
+
+a {
+  color: $baseFontColor;
+  text-decoration: none;
 }

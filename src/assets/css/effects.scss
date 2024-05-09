@@ -1,0 +1,9 @@
+@import "variables";
+
+.hover-highlight-effect:hover {
+  color: $accentColor;
+}
+
+.hover-shadow-effect:hover {
+  box-shadow: 0 0 16px $accentColor;
+}

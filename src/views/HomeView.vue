@@ -10,16 +10,21 @@
       environment.
     </p>
     <div class="icons-space">
-      <button class="contact-me-button link-icons">
+      <button class="contact-me-button link-icons hover-shadow-effect">
         <a class="mail-to-link" href="mailto: curtisackland@rogers.com">
           Email Me
         </a>
       </button>
       <div>
-        <a href="https://github.com/curtisackland" target="_blank">
+        <a
+          href="https://github.com/curtisackland"
+          target="_blank"
+          class="hover-highlight-effect"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"
+            fill="currentColor"
             class="link-icons"
           >
             <path
@@ -29,10 +34,15 @@
         </a>
       </div>
       <div>
-        <a href="https://www.linkedin.com/in/curtis-ackland/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/curtis-ackland/"
+          target="_blank"
+          class="hover-highlight-effect"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
+            fill="currentColor"
             class="link-icons"
           >
             <path
@@ -70,7 +80,6 @@ export default {
 }
 
 .link-icons {
-  fill: $baseFontColor;
   height: 60px;
   width: auto;
   margin: 4px 4px 4px 4px;
@@ -95,7 +104,7 @@ export default {
 }
 
 .mail-to-link {
-  text-decoration: none;
+  text-align: center;
   color: $accentColor;
 }
 

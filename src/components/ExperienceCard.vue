@@ -17,7 +17,7 @@ export default {
 
 <template>
   <a :href="link" target="_blank">
-    <div class="card-container">
+    <div class="card-container hover-shadow-effect">
       <h1>{{ jobTitle }} - {{ company }}</h1>
       <h2 class="date">{{ date }}</h2>
       <p>{{ description }}</p>
@@ -43,11 +43,6 @@ export default {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
   margin-bottom: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: $baseFontColor;
 }
 
 @keyframes fadeIn {

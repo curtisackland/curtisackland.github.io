@@ -25,6 +25,7 @@ export default {
         "JavaScript",
         "Java",
         "C++",
+        "Qt5",
         "C",
         "C#",
         "Python",
@@ -260,6 +261,12 @@ export default {
       animation: slideTopRight 0.3s forwards;
     }
   }
+
+  &:not(:hover) {
+    svg {
+      animation: slideBottomLeft 0.3s forwards;
+    }
+  }
 }
 
 @keyframes slideTopRight {
@@ -316,11 +323,6 @@ export default {
 
 p {
   margin: 0;
-}
-
-a {
-  color: $baseFontColor;
-  text-decoration: none;
 }
 
 .education-date {
