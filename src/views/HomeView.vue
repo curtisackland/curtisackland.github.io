@@ -1,7 +1,26 @@
 <template>
   <div class="home-container">
     <h4 class="nice-to-meet-you">Nice to meet you, my name is</h4>
-    <h1 class="name-text">Curtis Ackland.</h1>
+    <h1 class="falling-text">
+      <div>
+        <span>C</span>
+        <span>u</span>
+        <span>r</span>
+        <span>t</span>
+        <span>i</span>
+        <span>s&nbsp;</span>
+      </div>
+      <div>
+        <span>A</span>
+        <span>c</span>
+        <span>k</span>
+        <span>l</span>
+        <span>a</span>
+        <span>n</span>
+        <span>d</span>
+        <span>.</span>
+      </div>
+    </h1>
     <p class="about-me">
       I am based in London, Ontario and I am a recent Computer Science graduate
       of the University of Western Ontario. I am currently seeking opportunities
@@ -113,8 +132,73 @@ export default {
   margin: 0;
 }
 
-.name-text {
+/* for falling text */
+.falling-text {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 4em;
   white-space: normal;
+}
+
+.falling-text span {
+  animation: falling-text 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-50vh);
+  display: inline-block;
+}
+
+@keyframes falling-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-50vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delay each character */
+.falling-text div:nth-child(1) span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.falling-text div:nth-child(1) span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.falling-text div:nth-child(1) span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.falling-text div:nth-child(1) span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.falling-text div:nth-child(1) span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.falling-text div:nth-child(1) span:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.falling-text div:nth-child(2) span:nth-child(1) {
+  animation-delay: 0.7s;
+}
+.falling-text div:nth-child(2) span:nth-child(2) {
+  animation-delay: 0.8s;
+}
+.falling-text div:nth-child(2) span:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.falling-text div:nth-child(2) span:nth-child(4) {
+  animation-delay: 1s;
+}
+.falling-text div:nth-child(2) span:nth-child(5) {
+  animation-delay: 1.1s;
+}
+.falling-text div:nth-child(2) span:nth-child(6) {
+  animation-delay: 1.2s;
+}
+.falling-text div:nth-child(2) span:nth-child(7) {
+  animation-delay: 1.3s;
+}
+.falling-text div:nth-child(2) span:nth-child(8) {
+  animation-delay: 1.4s;
 }
 </style>
