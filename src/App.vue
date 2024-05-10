@@ -201,7 +201,10 @@ h2 {
 }
 
 .home {
+  display: flex;
+  flex-direction: column;
   align-content: center;
+  box-sizing: border-box;
   min-height: 100vh;
 }
 
