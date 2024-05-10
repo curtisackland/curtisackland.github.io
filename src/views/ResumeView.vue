@@ -100,138 +100,158 @@ export default {
         <h2>{{ button }}</h2>
       </button>
     </div>
-    <div v-if="page === 'Education'" class="education slide-in">
-      <div style="display: flex; align-items: center">
-        <img
-          alt="Western University Crest"
-          src="https://www.uwo.ca/img/homepage/2017/logo-western-crest-ftr.svg"
+    <div>
+      <div v-if="page === 'Education'" class="education slide-in">
+        <div style="display: flex; align-items: center">
+          <img
+            alt="Western University Crest"
+            src="https://www.uwo.ca/img/homepage/2017/logo-western-crest-ftr.svg"
+            style="
+              width: 80px;
+              float: left;
+              margin-right: 12px;
+              align-self: center;
+            "
+          />
+          <div style="height: 100%; align-content: center">
+            <p style="font-weight: bold">University of Western Ontario</p>
+            <p>Honours Specialization in Computer Science</p>
+            <p>Minor in Software Engineering</p>
+          </div>
+        </div>
+        <div class="education-date">2019-2024</div>
+      </div>
+      <div v-else-if="page === 'Experience'" class="slide-in">
+        <div class="education">
+          <div>
+            <p style="font-weight: bold">Software Developer Intern</p>
+            <p>Mobials Inc./AutoVerify</p>
+          </div>
+          <div class="education-date">May 2022 - August 2023</div>
+        </div>
+        <div class="education">
+          <div>
+            <p style="font-weight: bold">
+              Student Operator - Western Technology Services
+            </p>
+            <p>University of Western Ontario</p>
+          </div>
+          <div class="education-date">
+            <p>June 2021 - April 2022</p>
+            <p>Sept 2023 - April 2024</p>
+          </div>
+        </div>
+        <div class="education">
+          <div>
+            <p style="font-weight: bold">Human Resources Assistant</p>
+            <p>Thames Valley District School Board</p>
+          </div>
+          <div class="education-date">
+            <p>July 2018 - August 2018</p>
+            <p>July 2019 - August 2019</p>
+          </div>
+        </div>
+        <div class="education">
+          <div>
+            <p style="font-weight: bold">Produce Clerk</p>
+            <p>Sobeys</p>
+          </div>
+          <div class="education-date">July 2017 - December 2021</div>
+        </div>
+        <a href="#Experience">
+          <h2 class="see-all-projects">
+            See my experience &nbsp;
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="arrows"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </h2>
+        </a>
+      </div>
+      <div v-else-if="page === 'Technology'" class="technology slide-in">
+        <div
+          v-for="(item, index) in technology"
+          :key="index"
           style="
-            width: 80px;
-            float: left;
-            margin-right: 12px;
-            align-self: center;
+            display: flex;
+            align-content: center;
+            min-width: 125px;
+            margin: 8px;
           "
-        />
-        <div style="height: 100%; align-content: center">
-          <p style="font-weight: bold">University of Western Ontario</p>
-          <p>Honours Specialization in Computer Science</p>
-          <p>Minor in Software Engineering</p>
-        </div>
-      </div>
-      <div class="education-date">2019-2024</div>
-    </div>
-    <div v-else-if="page === 'Experience'" class="slide-in">
-      <div class="education">
-        <div>
-          <p style="font-weight: bold">Software Developer Intern</p>
-          <p>Mobials Inc./AutoVerify</p>
-        </div>
-        <div class="education-date">May 2022 - August 2023</div>
-      </div>
-      <div class="education">
-        <div>
-          <p style="font-weight: bold">
-            Student Operator - Western Technology Services
-          </p>
-          <p>University of Western Ontario</p>
-        </div>
-        <div class="education-date">
-          <p>June 2021 - April 2022</p>
-          <p>September 2023 - April 2024</p>
-        </div>
-      </div>
-      <div class="education">
-        <div>
-          <p style="font-weight: bold">Human Resources Assistant</p>
-          <p>Thames Valley District School Board</p>
-        </div>
-        <div class="education-date">
-          <p>July 2018 - August 2018</p>
-          <p>July 2019 - August 2019</p>
-        </div>
-      </div>
-      <div class="education">
-        <div>
-          <p style="font-weight: bold">Produce Clerk</p>
-          <p>Sobeys</p>
-        </div>
-        <div class="education-date">July 2017 - December 2021</div>
-      </div>
-    </div>
-    <div v-else-if="page === 'Technology'" class="technology slide-in">
-      <div
-        v-for="(item, index) in technology"
-        :key="index"
-        style="
-          display: flex;
-          align-content: center;
-          min-width: 125px;
-          margin: 8px;
-        "
-      >
-        <div class="bullet-point"></div>
-        <span style="font-weight: bold">{{ item }}</span>
-      </div>
-    </div>
-    <div v-else-if="page === 'Projects'" class="slide-in">
-      <div class="education">
-        <div>
-          <p class="project-titles">Rulemaking Influence Explorer</p>
-        </div>
-        <div class="education-date">September 2023 - April 2024</div>
-      </div>
-      <div class="education">
-        <div>
-          <p class="project-titles">Music Library Manager</p>
-        </div>
-        <div class="education-date">September 2023 - December 2023</div>
-      </div>
-      <div class="education">
-        <div>
-          <p class="project-titles">Character Map</p>
-        </div>
-        <div class="education-date">January 2024 - April 2024</div>
-      </div>
-      <a href="#Projects">
-        <h2 class="see-all-projects">
-          See all projects &nbsp;
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="arrows"
-            aria-hidden="true"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </h2>
-      </a>
-    </div>
-    <div v-else-if="page === 'Hobbies'" class="slide-in">
-      <div
-        v-for="(item, index) in hobbies"
-        :key="index"
-        style="display: flex; align-content: center; margin: 0 40px 16px 40px"
-      >
-        <div>
+        >
           <div class="bullet-point"></div>
-        </div>
-        <div style="margin-left: 8px">
-          <p style="font-weight: bold">{{ item.title }}</p>
-          <p style="margin-left: 8px">{{ item.description }}</p>
+          <span>{{ item }}</span>
         </div>
       </div>
-    </div>
-    <div v-else-if="page === 'Resume'" class="slide-in">
-      <iframe
-        src="https://drive.google.com/file/d/1Be7GE3HV6iK93Lf-EKbJ-VjZOLTUlqVu/preview"
-        style="width: 100%; height: auto; aspect-ratio: 0.75"
-      >
-      </iframe>
+      <div v-else-if="page === 'Projects'" class="slide-in">
+        <div class="education">
+          <div>
+            <p class="project-titles">Rulemaking Influence Explorer</p>
+          </div>
+          <div class="education-date">September 2023 - April 2024</div>
+        </div>
+        <div class="education">
+          <div>
+            <p class="project-titles">Music Library Manager</p>
+          </div>
+          <div class="education-date">September 2023 - December 2023</div>
+        </div>
+        <div class="education">
+          <div>
+            <p class="project-titles">Character Map</p>
+          </div>
+          <div class="education-date">January 2024 - April 2024</div>
+        </div>
+        <a href="#Projects">
+          <h2 class="see-all-projects">
+            See all projects &nbsp;
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              class="arrows"
+              aria-hidden="true"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </h2>
+        </a>
+      </div>
+      <div v-else-if="page === 'Hobbies'" class="slide-in">
+        <div
+          v-for="(item, index) in hobbies"
+          :key="index"
+          style="display: flex; align-content: center; margin: 0 40px 16px 40px"
+        >
+          <div>
+            <div class="bullet-point"></div>
+          </div>
+          <div style="margin-left: 8px">
+            <p style="font-weight: bold">{{ item.title }}</p>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+      <div v-else-if="page === 'Resume'" class="slide-in">
+        <iframe
+          src="https://drive.google.com/file/d/1Be7GE3HV6iK93Lf-EKbJ-VjZOLTUlqVu/preview"
+          style="width: 100%; height: auto; aspect-ratio: 0.75"
+        >
+        </iframe>
+      </div>
     </div>
   </div>
 </template>
@@ -291,7 +311,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 24px;
+  border: 1px solid $accentColor;
+  border-radius: 10px;
 
   button {
     flex: 1;
@@ -318,7 +339,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 12px;
+  margin-bottom: 12px;
 }
 
 p {
@@ -327,8 +348,6 @@ p {
 
 .education-date {
   align-content: center;
-  text-align: right;
-  margin: 0 24px 0 16px;
 }
 
 h2 {
@@ -357,7 +376,6 @@ h2 {
 
 .project-titles {
   font-weight: bold;
-  margin-left: 16px;
 }
 
 .see-all-projects {
@@ -407,6 +425,7 @@ li::marker {
 }
 
 .slide-in {
+  padding: 50px;
   animation: slideIn 0.5s ease forwards;
   opacity: 0;
   transform: translateX(-100%);
