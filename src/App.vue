@@ -63,6 +63,11 @@
 
 <style scoped lang="scss">
 nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
   padding: 30px;
   text-align: center;
   display: flex;
@@ -197,11 +202,17 @@ h2 {
 
 .home {
   align-content: center;
-  min-height: 80vh;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    padding-top: 130px; /* add space for nav bar */
+  }
 }
 
 .section {
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 </style>
 <script>

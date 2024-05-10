@@ -25,3 +25,35 @@ a {
   color: $baseFontColor;
   text-decoration: none;
 }
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $lightAccentColor;
+}
+
+/* Handle on active state */
+::-webkit-scrollbar-thumb:active {
+  background: $accentColor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $baseFontColor;
+  border-radius: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

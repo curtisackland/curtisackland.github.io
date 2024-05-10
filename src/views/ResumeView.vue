@@ -59,7 +59,7 @@ export default {
         {
           title: "Gaming",
           description:
-            "I've been gaming since I was young, starting with Mario Kart on my brother's GameCube. Now, I enjoy playing a variety of competitive and adventure games.",
+            "I've been gaming since I was young, starting with Mario Kart on my brother's GameCube. Now, I enjoy playing a variety of competitive and adventure games on PC.",
         },
       ],
     };
