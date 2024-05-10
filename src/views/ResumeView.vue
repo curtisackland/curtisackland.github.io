@@ -311,8 +311,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid $accentColor;
-  border-radius: 10px;
 
   button {
     flex: 1;

@@ -63,9 +63,6 @@
 
 <style scoped lang="scss">
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   box-sizing: border-box;
   padding: 30px;
@@ -118,13 +115,14 @@ nav {
     flex-direction: column;
   }
   .open-responsive-navbar {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    overflow: scroll;
     position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: $backgroundColor;
     z-index: 100;
     left: 0;
@@ -205,13 +203,7 @@ h2 {
   flex-direction: column;
   align-content: center;
   box-sizing: border-box;
-  min-height: 100vh;
-}
-
-@media screen and (max-width: 400px) {
-  .home {
-    padding-top: 130px; /* add space for nav bar */
-  }
+  min-height: 86vh;
 }
 
 .section {
