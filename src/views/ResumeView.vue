@@ -230,11 +230,11 @@ export default {
           </h2>
         </a>
       </div>
-      <div v-else-if="page === 'Hobbies'" class="slide-in">
+      <div v-else-if="page === 'Hobbies'" class="hobbies slide-in">
         <div
           v-for="(item, index) in hobbies"
           :key="index"
-          style="display: flex; align-content: center; margin: 0 40px 16px 40px"
+          style="display: flex; align-content: center; margin: 0 0 16px"
         >
           <div>
             <div class="bullet-point"></div>
@@ -245,7 +245,7 @@ export default {
           </div>
         </div>
       </div>
-      <div v-else-if="page === 'Resume'" class="slide-in">
+      <div v-else-if="page === 'Resume'" class="slide-in hobbies">
         <iframe
           src="https://drive.google.com/file/d/1Be7GE3HV6iK93Lf-EKbJ-VjZOLTUlqVu/preview"
           style="width: 100%; height: auto; aspect-ratio: 0.75"
@@ -370,10 +370,15 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 50px 0 !important;
 }
 
 .project-titles {
   font-weight: bold;
+}
+
+.hobbies {
+  padding: 50px 5% !important;
 }
 
 .see-all-projects {
