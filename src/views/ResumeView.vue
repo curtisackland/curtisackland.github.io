@@ -32,6 +32,8 @@ export default {
         "PHP Slim",
         "PHPUnit",
         "Doctrine ORM",
+        "Guzzle HTTP",
+        "Twig",
         "RESTful API",
         "VueJS",
         "Vuetify",
@@ -44,6 +46,12 @@ export default {
         "MySQL",
         "SQLite3",
         "PostgreSQL",
+        "RabbitMQ",
+        "Kafka",
+        "Maven",
+        "AWS",
+        "GCP",
+        "IBM Cloud",
       ],
       hobbies: [
         {

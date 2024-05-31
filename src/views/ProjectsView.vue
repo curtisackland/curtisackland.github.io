@@ -47,6 +47,26 @@ export default {
         ]"
       ></ProjectCard>
       <ProjectCard
+        project-title="Flower Plant Recognizer"
+        date="2024"
+        description="Developed a full-stack web application that allows users to describe or upload a picture of a flower or plant to
+        identify its type using Google Gemini’s AI. Created a user-friendly chatbot interface using React to facilitate user interaction.
+        Built an API with Express.js to handle incoming user messages and communicate with Google Gemini’s API
+        Used Google Gemini’s API to analyze user-provided descriptions or images and identify the type of flower or plant.
+        Implemented continuous delivery using Google Cloud Platform to automatically deploy new updates."
+        :skills="[
+          'React',
+          'Express.js',
+          'Node.js',
+          'Google Gemini AI API',
+          'GCP',
+        ]"
+        link="https://github.com/curtisackland/flower-plant-recognizer"
+        :images="[
+          require('@/assets/projectImages/flowerPlantRecognizer/flower-plant-recognizer.png'),
+        ]"
+      ></ProjectCard>
+      <ProjectCard
         project-title="Apex Extermination: Lone Operative Game"
         date="2024"
         description="A 3D open-world first person shooter where the player must eliminate enemies and level up while they explore Area52 and defeat the 3 bosses. Built using C# and Unity."
