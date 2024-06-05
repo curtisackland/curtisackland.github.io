@@ -48,6 +48,7 @@ export default {
         "PostgreSQL",
         "RabbitMQ",
         "Kafka",
+        "Redis",
         "Maven",
         "AWS",
         "GCP",
@@ -215,7 +216,14 @@ export default {
         </div>
         <div class="education">
           <div>
-            <p class="project-titles">Character Map</p>
+            <p class="project-titles">Flower Plant Recognizer</p>
+          </div>
+          <div class="education-date">May 2024</div>
+          <div class="education-date">May 2024</div>
+        </div>
+        <div class="education">
+          <div>
+            <p class="project-titles">Character Map Redesign</p>
           </div>
           <div class="education-date">January 2024 - April 2024</div>
         </div>
@@ -256,7 +264,7 @@ export default {
       <div v-else-if="page === 'Resume'" class="slide-in hobbies">
         <iframe
           src="https://drive.google.com/file/d/1Be7GE3HV6iK93Lf-EKbJ-VjZOLTUlqVu/preview"
-          style="width: 100%; height: auto; aspect-ratio: 0.75"
+          style="width: 100%; height: auto; aspect-ratio: 0.77"
         >
         </iframe>
       </div>

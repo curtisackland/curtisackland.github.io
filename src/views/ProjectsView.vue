@@ -28,7 +28,8 @@ export default {
           'Docker',
           'Python',
         ]"
-        link="https://github.com/curtisackland/rule-influence-website"
+        githubLink="https://github.com/curtisackland/rule-influence-website"
+        live-link="https://rule-influence-explorer-o6il5tt6qq-pd.a.run.app/"
         :images="[
           require('@/assets/projectImages/rulemakingInfluenceExplorer/homepage.png'),
         ]"
@@ -41,7 +42,7 @@ export default {
         Created custom shuffling and sorting algorithms and the ability for users to transfer playlists from one platform to another.
         Used VueJS for the front-end and Python Flask for the back-end. Used Docker to containerize the application and deploy it to IBM Cloud."
         :skills="['VueJS', 'Bootstrap', 'Python Flask', 'Docker', 'IBM Cloud']"
-        link="https://github.com/curtisackland/music-library-manager"
+        githubLink="https://github.com/curtisackland/music-library-manager"
         :images="[
           require('@/assets/projectImages/musicLibraryManager/music-library-manager.jpg'),
         ]"
@@ -61,19 +62,10 @@ export default {
           'Google Gemini AI API',
           'GCP',
         ]"
-        link="https://github.com/curtisackland/flower-plant-recognizer"
+        githubLink="https://github.com/curtisackland/flower-plant-recognizer"
+        live-link="https://flower-plant-recognizer-ufb75eeywa-uk.a.run.app/"
         :images="[
           require('@/assets/projectImages/flowerPlantRecognizer/flower-plant-recognizer.png'),
-        ]"
-      ></ProjectCard>
-      <ProjectCard
-        project-title="Apex Extermination: Lone Operative Game"
-        date="2024"
-        description="A 3D open-world first person shooter where the player must eliminate enemies and level up while they explore Area52 and defeat the 3 bosses. Built using C# and Unity."
-        :skills="['C#', 'Unity']"
-        link="https://github.com/curtisackland/4483-game"
-        :images="[
-          require('@/assets/projectImages/apexExterminationGame/apex-extermination.png'),
         ]"
       ></ProjectCard>
       <ProjectCard
@@ -81,7 +73,8 @@ export default {
         date="2024"
         description="A redesign of Windows' Character Map built using VueJS with Vuetify and Bootstrap."
         :skills="['VueJS', 'Vuetify', 'Bootstrap', 'HTML', 'CSS', 'Javascript']"
-        link="https://github.com/curtisackland/character-map"
+        githubLink="https://github.com/curtisackland/character-map"
+        live-link="https://curtisackland.github.io/character-map/"
         :images="[
           require('@/assets/projectImages/characterMapRedesign/character-map-redesign.png'),
         ]"
@@ -91,9 +84,20 @@ export default {
         date="2024"
         description="A website showing off my personal portfolio. Built using VueJS."
         :skills="['VueJS', 'SCSS', 'HTML', 'CSS', 'Javascript']"
-        link="https://github.com/curtisackland/curtisackland.github.io"
+        githubLink="https://github.com/curtisackland/curtisackland.github.io"
+        live-link="https://curtisackland.github.io/"
         :images="[
           require('@/assets/projectImages/personalPortfolioWebsite/personal-portfolio.png'),
+        ]"
+      ></ProjectCard>
+      <ProjectCard
+        project-title="Apex Extermination: Lone Operative Game"
+        date="2024"
+        description="A 3D open-world first person shooter where the player must eliminate enemies and level up while they explore Area52 and defeat the 3 bosses. Built using C# and Unity."
+        :skills="['C#', 'Unity']"
+        githubLink="https://github.com/curtisackland/4483-game"
+        :images="[
+          require('@/assets/projectImages/apexExterminationGame/apex-extermination.png'),
         ]"
       ></ProjectCard>
       <ProjectCard
@@ -101,7 +105,7 @@ export default {
         date="2021"
         description="2D top down shooter where the player plays as a monkey that has to defeat waves of monsters and survive as long as possible. This project was made in C++ using QT5 and Boost."
         :skills="['C++', 'QT5', 'Boost']"
-        link="https://github.com/curtisackland/Return-Of-Monke"
+        githubLink="https://github.com/curtisackland/Return-Of-Monke"
         :images="[
           require('@/assets/projectImages/returnOfMonkeGame/return-of-monke-game.png'),
         ]"
@@ -111,7 +115,7 @@ export default {
         date="2020"
         description="Provides statistics about certain countries by retreiving information from the World Bank API and displaying it using various charts. Built in Java using Java Swing for the user interface and JFreeChart for the graphs."
         :skills="['Java', 'Java Swing', 'JFreeChart', 'Maven']"
-        link="https://github.com/curtisackland/country-demographic-analysis"
+        githubLink="https://github.com/curtisackland/country-demographic-analysis"
         :images="[
           require('@/assets/projectImages/countryDemographicAnalysis/country-demographic-analysis.png'),
         ]"
