@@ -219,7 +219,6 @@ export default {
             <p class="project-titles">Flower Plant Recognizer</p>
           </div>
           <div class="education-date">May 2024</div>
-          <div class="education-date">May 2024</div>
         </div>
         <div class="education">
           <div>
