@@ -22,11 +22,12 @@
       </div>
     </h1>
     <p class="about-me">
-      I am based in London, Ontario and I am a recent Computer Science graduate
-      of the University of Western Ontario. I am currently seeking opportunities
-      to leverage full stack internship experience and academic knowledge to
-      contribute to high-quality software solutions within a collaborative team
-      environment.
+      I'm a Junior Software Engineer based in London, Ontario, and an Honours
+      Computer Science graduate from Western University. I build full-stack web
+      applications using PHP/Laravel and Vue.js — from designing REST APIs and
+      working with MySQL to building responsive, user-friendly interfaces. I’ve
+      worked on both customer-facing features and internal tools, and I enjoy
+      solving real-world problems through clean, maintainable code.
     </p>
     <div class="icons-space">
       <button class="contact-me-button link-icons hover-shadow-effect">

@@ -11,6 +11,26 @@ export default {
   <div class="cards-container">
     <h1 class="experience-header">Experience</h1>
     <ExperienceCard
+      job-title="Junior Software Engineer - Engineering Team"
+      company="Zaui Software"
+      date="July 2024 - Present"
+      description="I build and maintain full-stack features for both customer-facing booking flows and internal tools used by travel and tour operators. My work includes developing scalable solutions, improving legacy systems, and collaborating across teams to deliver a seamless user experience."
+      :skills="[
+        'VueJS',
+        'Vuetify',
+        'Laravel',
+        'PHP',
+        'MySQL',
+        'SCSS',
+        'Blade templates',
+        'Git',
+        'Github',
+        'Jira',
+      ]"
+      link="https://www.autoverify.com/"
+      class="card"
+    ></ExperienceCard>
+    <ExperienceCard
       job-title="Software Developer Intern - Digital Retailing Team"
       company="Mobials Inc/AutoVerify"
       date="May 2022 - August 2023"
