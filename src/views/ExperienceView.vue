@@ -27,7 +27,7 @@ export default {
         'Github',
         'Jira',
       ]"
-      link="https://www.autoverify.com/"
+      link="https://www.zaui.com/"
       class="card"
     ></ExperienceCard>
     <ExperienceCard
